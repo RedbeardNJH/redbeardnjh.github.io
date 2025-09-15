@@ -28,9 +28,9 @@ main ul, main ol {
 }
 
 footer { 
-    background: #eee; 
-    color: #333; 
-    /*position: fixed; */
+    background: #222; 
+    color: #fff; 
+    position: fixed;
     width: 100%; 
     bottom: 0; 
 }
