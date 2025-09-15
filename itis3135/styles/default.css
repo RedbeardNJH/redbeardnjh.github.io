@@ -30,7 +30,7 @@ main ul, main ol {
 footer { 
     background: #222; 
     color: #fff; 
-    position: fixed;
+    position:relative;
     width: 100%; 
     bottom: 0; 
 }
@@ -38,7 +38,14 @@ footer {
 a:visited, a:link {
     color: #DD6E0F;
 }
+a:hover {
+    color: #fff;
+}
 
 img {
     width: 300px;
+}
+
+html {
+    overscroll-behavior: none;
 }
