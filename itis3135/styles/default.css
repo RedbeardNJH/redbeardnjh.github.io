@@ -27,6 +27,10 @@ main ul, main ol {
     text-align: left;
 }
 
+li {
+    margin: 10px;
+}
+
 footer { 
     background: #222; 
     color: #fff; 
