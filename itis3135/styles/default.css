@@ -53,3 +53,7 @@ img {
 html {
     overscroll-behavior: none;
 }
+
+.text {
+    list-style:none;
+}
