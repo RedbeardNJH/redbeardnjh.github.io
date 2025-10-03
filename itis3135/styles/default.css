@@ -17,9 +17,14 @@ main {
     padding: 2em; 
     text-align: center; 
     box-sizing: border-box;
-    max-width: 700px;
-    margin: 0 auto;
+    max-width: 1200px;      /* Added for max-width */
+    width: 90%;             /* Added for percentage width */
+    margin: 0 auto;         /* Centers the content horizontally */
     color: #fff;
+    /*background: rgba(44, 62, 80, 0.95); /* subtle background for contrast */
+    border-radius: 12px;
+    box-shadow: 0 4px 24px rgba(44,62,80,0.10);
+    transition: all 0.3s;
 }
 
 main ul, main ol {
@@ -48,6 +53,9 @@ a:hover {
 
 img {
     width: 300px;
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
 }
 
 html {
@@ -56,4 +64,35 @@ html {
 
 .text {
     list-style:none;
+}
+
+/* Responsive Design for 3 device sizes */
+@media (max-width: 900px) {
+    main {
+        max-width: 95%;
+        /*width: 98%;*/
+        padding: 1.5em;
+    }
+    img {
+        width: 220px;
+    }
+}
+
+@media (max-width: 600px) {
+    main {
+        max-width: 100%;
+        /*width: 100%; */
+        padding: 1em;
+        border-radius: 0;
+    }
+    header, footer {
+        padding: 0.5em 0;
+    }
+    img {
+        width: 100%;
+        max-width: 100%;
+    }
+    body {
+        font-size: 1em;
+    }
 }
