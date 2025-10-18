@@ -3,20 +3,207 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Site Name + divider + page name</title>
+    <title>ITIS 3135 | Noah J Harden | Hobby Webpage: FaB Rok Throwers</title>
+    <style>
+    body {
+      margin: 0;
+      font-family: "Segoe UI", Arial, sans-serif;
+      background-color: #1b1812;
+      color: #fff;
+      line-height: 1.6;
+    }
+
+    header, footer {
+      background-color: #a43708;
+      color: #fff;
+      text-align: center;
+      padding: 1rem 0;
+    }
+
+    h1 {
+      margin: 0.2em 0;
+      font-size: 2rem;
+      letter-spacing: 1px;
+    }
+
+    nav {
+      margin-top: 0.5rem;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #fff;
+      margin: 0 0.5rem;
+      font-weight: bold;
+      padding: 0.25rem 0.5rem;
+      border-radius: 6px;
+      transition: background-color 0.3s;
+    }
+
+    nav a:hover, nav a:focus {
+      background-color: #a43708;
+    }
+
+    /* unique divider symbol: ✿ */
+    nav a::after {
+      content: " ✿";
+    }
+    nav a:last-child::after {
+      content: "";
+    }
+
+    main {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 1.5rem;
+    }
+
+    section {
+      display: none;
+      animation: fadeIn 0.4s ease-in-out;
+    }
+
+    .active {
+      display: block;
+    }
+
+    h2 {
+      border-bottom: 3px solid #a43708;
+      padding-bottom: 0.3rem;
+      margin-top: 0;
+    }
+
+    figure {
+      text-align: center;
+      margin: 1rem 0;
+    }
+
+    figure img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+    }
+
+    figure figcaption {
+      font-style: italic;
+      margin-top: 0.4rem;
+    }
+
+    .ai-prompt {
+      font-size: 0.85rem;
+      font-style: italic;
+      color: #555;
+      margin-top: 0.3rem;
+    }
+
+    footer {
+      margin-top: 2rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .validators img {
+      height: 31px;
+      margin: 0 3px;
+    }
+
+    .design-link {
+      color: #fff;
+      text-decoration: underline;
+    }
+
+    #logo {
+        box-shadow: none;
+    }
+
+    #rok, #whereQ, #howQ, #whenQ {
+        max-height: 400px;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+    </style>
+    <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
-        <h1 id="sitename">Pussy Eating Contest</h1>
+        <h1 id="sitename">Team Rok Throwers: Flesh and Blood Trading Card Game</h1>
+        <nav>
+        <a href="#what" data-target="what">What</a>
+        <a href="#who" data-target="who">Who</a>
+        <a href="#when" data-target="when">When</a>
+        <a href="#where" data-target="where">Where</a>
+        <a href="#how" data-target="how">How</a>
+        <a href="#why" data-target="why">Why</a>
+        <a href="#why" data-target="why">A</a>
+        </nav>
     </header>
     <main>
-        <h2 id="sitename">page name</h2>
-        <p>Yabba Dabba Dooooooo</p>
-        <p>Yabba Dabba Dooooooo</p>
-        <p>Yabba Dabba Dooooooo</p>
-        <p>Yabba Dabba Dooooooo</p>
-        <p>Yabba Dabba Dooooooo</p>
-        <p>Yabba Dabba Dooooooo</p>
+        <section id="what" class="active">
+            <h2>What is Flesh and Blood?</h2>
+            <p>A trading card game (TCG) is a type of game where players collect, trade, and use specially designed cards to compete against each other. 
+                Each card typically represents characters, abilities, or resources that can be strategically combined during gameplay. 
+                TCGs often involve building personalized decks, encouraging both strategic thinking and social interaction through trading and matches.</p>
+                <p>Flesh and Blood is a trading card game where two players simulate combat between two individuals in a high fantasy world. 
+                The game is played using a deck of 80 trading cards, consisting of your character, equipment for the character, and actions your character can do.</p>
+            <figure>
+                <img id="logo" src="https://upload.wikimedia.org/wikipedia/en/e/ed/Flesh_and_Blood_TCG_Logo.png" alt="Logo for Flesh and Blood TCG">
+                <figcaption>Logo for Flesh and Blood TCG</figcaption>
+            </figure>
+        </section>
+        <section id="who">
+            <h2>Who are the Rok Throwers?</h2>
+            <p>Flesh and Blood has a competitive scene that has an official global ranking. The largest tournaments are competed at a worldwide scale, where you must be one of the best in your region in order to participate.</p>
+            <p>The Rok Throwers is a team of Flesh and Blood players I have joined. We practice playing the game and compete in competitivley rated events across the East Coast.</p>
+            <figure>
+                <img id="rok" src="images/rok_empty_mouth2.png" alt="Rok Throwers logo">
+                <figcaption>Rok throwers logo</figcaption>
+            </figure>
+            <p>The next time all of us in the team will meet is next November in Philledelphia, when we all compete in the World Championship.</p>
+        </section>
+        <section id="when">
+            <h2>When do I play Flesh and Blood?</h2>
+            <p>Every Wednesday I set my afternoon aside to travel somewhere locally to a weekly get together with other players and we play the game.</p>
+            <figure>
+                <img id="whenQ" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Flesh_and_Blood_Super_Slam_World_Premiere_Montreal_2025-09-14.jpg/1920px-Flesh_and_Blood_Super_Slam_World_Premiere_Montreal_2025-09-14.jpg" alt="group of people playing FaB at a competitive event">
+                <figcaption>Flesh and Blood Super Slam World Premiere at the Palais des Congrès de Montréal</figcaption>
+            </figure>
+            <p>Sometimes I take whole weekends to travel to another state to participate at a more prestegious event in a different state.</p>
+        </section>
+        <section id="where">
+            <h2>Where to play Flesh and Blood?</h2>
+            <p>Local game stores are community hubs where trading card game players can buy cards, find new products, and participate in organized events. 
+                They provide a welcoming space for players to meet, trade, and compete, helping to build vibrant local TCG communities.</p>
+            <p>The LGS I go to on a weekly basis is named Get Some Game and is a 20 minute drive from the university. There are many more across the USA that have Flesh and Blood events, and all of them usually hold weekly events.</p>
+            <figure>
+                <img id = whereQ src="https://lh3.googleusercontent.com/gps-cs-s/AC9h4npUxKECaMkn4pEAVpgUtcIC6XYV0HvZdSSbwpBQ-2c7zMdchIGkWGpLT1IzBDqObb9OXdoWH7OuDaC2wgvvrmMLsRNOI1yNFHefamNgYAEcGd3F_m78qN_RkdAcrkfqyOngfgN-XTMZ72x_=s1360-w1360-h1020" alt="People playing FaB">
+                <figcaption>Flesh and Blood Super Slam World Premiere at the Palais des Congrès de Montréal</figcaption>
+            </figure>
+        </section>
+        <section id="how">
+            <h2>How do you play Flesh and Blood?</h2>
+            <p>C</p>
+            <figure>
+                <img id="howQ" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Flesh_and_Blood_card_game_2022.jpg/1920px-Flesh_and_Blood_card_game_2022.jpg" alt="People playing FaB">
+                <figcaption>People Playing Flesh and Blood</figcaption>
+            </figure>
+            <p>F</p>
+        </section>
+        <section id="why">
+            <h2>Why do I play Flesh and Blood?</h2>
+            <p>B</p>
+            <p>C</p>
+            <figure>
+                <img src="https://cdn.pixabay.com/photo/2014/06/03/19/38/board-361516_640.jpg" alt="test picture">
+                <figcaption>D</figcaption>
+            </figure>
+            <p>F</p>
+        </section>
     </main>
     <footer></footer>
     <script src="scripts/default.js"></script>
