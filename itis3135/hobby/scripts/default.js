@@ -1,4 +1,3 @@
-// Basic SPA-like section navigation
 document.addEventListener("DOMContentLoaded", () => {
   const navLinks = document.querySelectorAll('nav a');
   const sections = document.querySelectorAll('main section');
