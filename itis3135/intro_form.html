@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ITIS 3135 | Noah J Harden | Nocturnal Hampster | Introduction Form</title>
+    <link rel="stylesheet" type="text/css" href="./styles/default.css" />
+    <script src="scripts/introForm.js"></script>
+    <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div data-include="components/header.html"></div>
+    <main>
+        <h2>Build Your Own Introduction</h2>
+        <h3>PLease submit the form</h3>
+        <form id="form">
+            <fieldset id="nameInformation">
+                <legend>Name Information</legend>
+                <!-- First Name -->
+                <label for="firstName">First Name: </label>
+                <input type="text" id="firstName" name="firstName" value="Noah" placeholder="Skaboosh" required>
+
+                <!-- Middle Name -->
+                <label for="middleName">Middle Name: </label>
+                <input type="text" id="middleName" name="middleName" value="James" placeholder="Jason" required>
+
+                <!-- Last Name -->
+                <label for="lastName">Last Name: </label>
+                <input type="text" id="lastName" name="lastName" value="Harden" placeholder="McGee" required>
+
+                <!-- Preffered Name -->
+                <label for="prefName">Preferred Name: </label>
+                <input type="text" id="prefName" name="prefName" value="" placeholder="Nickname">
+            </fieldset>
+
+            <fieldset>
+                <legend>Mascot</legend>
+                <!--Mascot Adjective-->
+                <label for="mascotAdjective">Mascot Adjective: </label>
+                <input type="text" id="mascotAdjective" name="mascotAdjective" value="Nocturnal" placeholder="Negative">
+
+                <!--Mascot Animal-->
+                <label for="mascotAnimal">Mascot Animal: </label>
+                <input type="text" id="mascotAnimal" name="mascotAnimal" value="Hamster" placeholder="Horse">
+
+            </fieldset>
+
+            <fieldset>
+                <legend>Divider</legend>
+                <label for="dividerSymbol">Divider Symbol: </label>
+                <input type="text" id="dividerSymbol" name="dividerSymbol" value="|" placeholder="|, *, $, -, etc">
+            </fieldset>
+
+            <fieldset>
+                <legend>Picture</legend>
+                <!-- Picture -->
+                 <label for="picture">Picture Upload: </label>
+                 <input type="file" id="picture" name="picture">
+
+                 <!-- Picture Caption-->
+                  <label for="picCaption">Picture Caption: </label>
+                  <input type="text" id="picCaption" name="picCaption">
+            </fieldset>
+
+            <fieldset>
+                <legend>Personal Information</legend>
+                <!--Personal Statement-->
+                <label for="personalStatement">Personal Statement: </label>
+                <textarea name="personalStatement" id="personalStatement" placeholder="placeholder"></textarea>
+                <!--Personal Background-->
+                <label for="personalBackground">Personal Background: </label>
+                <textarea name="personalBackground" id="personalBackground" placeholder="placeholder"></textarea>
+                <!--Professional Background-->
+                <label for="professionalBackground">Professional Background: </label>
+                <textarea name="professionalBackground" id="professionalBackground" placeholder="placeholder"></textarea>
+                <!--Academic Background-->
+                <label for="academicBackground">Academic Background: </label>
+                <textarea name="academicBackground" id="academicBackground" placeholder="placeholder"></textarea>
+                <!--Computer Information-->
+                <label for="computerInformation">Computer Information: </label>
+                <textarea name="computerInformation" id="computerInformation" placeholder="placeholder"></textarea>
+            </fieldset>
+
+            <fieldset>
+                <legend>Courses</legend>
+                    <input type="text" id="courses" name="courses" placeholder="5" value="">Number of Classes:<br />
+                    <a href="#" id="filldetails" onclick="addFields()">Create Fields</a>
+                    <div id="container"></div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Quote</legend>
+                <!--Quote-->
+                <label for="quote">Quote: </label>
+                <input type="text" id="quote" name="quote" placeholder="quote"
+                    value="">
+
+                <!--Quote Author-->
+                <label for="quoteAuthor">Quote Author: </label>
+                <input type="text" id="quoteAuthor" name="quoteAuthor" placeholder="refrence"
+                    value="">
+            </fieldset>
+
+            <fieldset>
+                <legend>Links</legend>
+                <!--LinkedIn-->
+                <label for="linkedIn">LinkedIn: </label>
+                <input type="text" id="linkedIn" name="linkedIn"
+                    value="" placeholder="LinkedIn Link">
+
+                <!--GitHub-->
+                <label for="gitHub">GitHub: </label>
+                <input type="text" id="gitHub" name="gitHub" value=""
+                    placeholder="GitHub profile link">
+
+                <!--GitHub.io-->
+                <label for="gitHubIO">GitHub.io: </label>
+                <input type="text" id="gitHubIO" name="gitHubIO" value=""
+                    placeholder="GitHub.io webpage link">
+
+                <!--CLT Homepage-->
+                <label for="cltHomepage">CLT Homepage: </label>
+                <input type="text" id="cltHomepage" name="cltHomepage" value=""
+                    placeholder="CLT Homepage link">
+
+                <!--Course Page-->
+                <label for="coursePage">Course Page: </label>
+                <input type="text" id="coursePage" name="coursePage" value=""
+                    placeholder="Course Page Link">
+
+                <!--freeCodeCamp-->
+                <label for="freeCodeCamp">freeCodeCamp: </label>
+                <input type="text" id="freeCodeCamp" name="freeCodeCamp"
+                    value="" placeholder="freeCodeCamp Profile link">
+            </fieldset>
+        </form>
+        <button onclick="submitData()">Submit</button>
+        <button type="reset" onclick="hideForm(), clearAllField()">Reset</button>
+        <button type="button" onclick="clearValues()">Clear</button>
+
+    </main>
+    <div data-include="components/footer.html"></div>
+    <script src="scripts/HTMLInclude.js"></script>
+</body>
+</html>

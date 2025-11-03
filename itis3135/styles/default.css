@@ -15,7 +15,7 @@ header {
 
 main { 
     padding: 2em; 
-    text-align: center; 
+    text-align: left; 
     box-sizing: border-box;
     max-width: 1200px;      /* Added for max-width */
     width: 90%;             /* Added for percentage width */
@@ -28,7 +28,7 @@ main {
 }
 
 main ul, main ol {
-    display: inline-block;
+    /*display: inline-block; */
     text-align: left;
 }
 
@@ -95,4 +95,36 @@ html {
     body {
         font-size: 1em;
     }
+
+    #formOutput {
+        border-radius: 8px;
+        padding: 10px 20px;
+        margin-top: 5px;
+    }
+
+    fieldset{
+        border-color: black;
+        border-width: 10px;
+        border-style:groove;
+        margin:  20px auto;
+    }
+
+
+    input, textarea{
+        display: block;
+        border-width: 2px;
+        border-style:solid;
+        border-color: black;
+        margin-bottom: 20px;
+        margin-top: 3px;
+    }
 }
+
+.inactive {
+    display: none;    
+}
+
+figcaption {
+    margin-left: 175px;
+}
+
